@@ -30,7 +30,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex items-start justify-between">
         <Sidebar />
-        <main className="w-full h-full">{children}</main>
+        <main className="size-full">{children}</main>
       </body>
     </html>
   );
