@@ -69,11 +69,11 @@ export default function Sidebar() {
   ];
 
   return (
-    <aside className="flex flex-col gap-4 w-75 min-w-75 border-r min-h-screen p-4">
+    <aside className="flex flex-col gap-4 w-75 min-w-75 border-r min-h-screen p-4 fixed">
       <div>
         <UserItem />
       </div>
-      <div className="grow">
+      <nav className="grow">
         <Command className="max-w-sm rounded-lg">
           <CommandList>
             {menuList.map((menu, key: number) => (
@@ -90,7 +90,7 @@ export default function Sidebar() {
             ))}
           </CommandList>
         </Command>
-      </div>
+      </nav>
       <div>Settings / Notification</div>
     </aside>
   );
