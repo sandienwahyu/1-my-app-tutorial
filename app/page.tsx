@@ -1,10 +1,9 @@
-import { Button } from "@/components/ui/button";
+import General from "@/components/Cards/General";
 
 export default function Home() {
   return (
-    <div>
-      Homepage
-      <Button size={"lg"}>Click Me!</Button>
+    <div className="grid grid-cols-2">
+      <General />
     </div>
   );
 }
