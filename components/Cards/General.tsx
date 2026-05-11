@@ -30,12 +30,12 @@ const data = generateSeries(
 
 export default function General() {
   return (
-    <Card className="ml-4 mt-4">
+    <Card>
       <CardHeader>
         <CardTitle>General Chart</CardTitle>
         <CardDescription>This is General Chart</CardDescription>
       </CardHeader>
-      <CardContent className="h-100">
+      <CardContent className="h-full">
         {" "}
         {/* ⚠️ Must have a height */}
         <ResponsiveBump
