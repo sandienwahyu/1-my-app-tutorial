@@ -26,7 +26,7 @@ export default function Header() {
   ]);
 
   return (
-    <div className="grid grid-cols-2 w-full p-2 border-b">
+    <div className="h-15 grid grid-cols-2 w-full p-2 border-b">
       <CommandDemo />
       <div className="flex justify-end items-center">
         <DropdownMenu>

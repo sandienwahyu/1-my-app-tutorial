@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import UserItem from "./UserItem";
 import { MenuList } from "@/types/sidebar";
+import Link from "next/link";
 
 export default function Sidebar() {
   const menuList: MenuList[] = [
@@ -69,9 +70,14 @@ export default function Sidebar() {
   ];
 
   return (
-    <aside className="flex flex-col gap-4 w-75 min-w-75 border-r min-h-screen p-4 fixed">
+    <aside className="fixed flex flex-col h-full gap-4 p-4 justify-between">
       <div>
-        <UserItem />
+        <UserItem
+          color="bg-emerald-500"
+          initial="SW"
+          name="Sandien Wahyu"
+          email="sandienwahyu@gmail.com"
+        />
       </div>
       <nav className="grow">
         <Command className="max-w-sm rounded-lg">
@@ -91,7 +97,12 @@ export default function Sidebar() {
           </CommandList>
         </Command>
       </nav>
-      <div>Settings / Notification</div>
+      <Link href={"/profile"} className="flex gap-2">
+        <span>
+          <Settings />
+        </span>
+        <p>User Settings</p>
+      </Link>
     </aside>
   );
 }

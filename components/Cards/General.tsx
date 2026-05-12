@@ -30,7 +30,7 @@ const data = generateSeries(
 
 export default function General() {
   return (
-    <Card>
+    <Card className="h-100">
       <CardHeader>
         <CardTitle>General Chart</CardTitle>
         <CardDescription>This is General Chart</CardDescription>

@@ -63,7 +63,7 @@ export function DataTable<TData, TValue>({
   });
 
   return (
-    <Card className="gap-1">
+    <Card>
       <CardHeader className="grid grid-cols-2 items-center justify-between">
         <div>
           <CardTitle>Table Chart</CardTitle>

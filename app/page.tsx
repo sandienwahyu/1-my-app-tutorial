@@ -64,14 +64,14 @@ export default async function Home() {
 
   return (
     <>
-      <div className="grid grid-cols-2 gap-4 mx-4 mt-4">
+      <div className="grid md:grid-cols-2 gap-4 mx-4 mt-4">
         <General />
         <div className="grid h-100 gap-2 items-center">
           <Calendar />
           <Calendar />
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-4 h-55 m-4">
+      <div className="grid grid-rows-3 grid-cols-1 gap-4 h-210 sm:grid-rows-1 sm:grid-cols-3 sm:h-75 m-4">
         <Lines />
         <TableChart />
         <DataTable columns={columns} data={data} />

@@ -29,9 +29,11 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex items-start justify-between">
-        <Sidebar />
-        <main className="grid pl-75 w-full">
+      <body className="min-h-full flex">
+        <div className="min-w-70 border-r min-h-screen hidden lg:flex justify-center transition">
+          <Sidebar />
+        </div>
+        <main className="flex flex-col w-full">
           <Header />
           {children}
         </main>
